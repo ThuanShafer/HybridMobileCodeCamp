@@ -1,0 +1,73 @@
+<ion-side-menus >
+    <ion-pane ion-side-menu-content>
+        <ion-nav-view name="menuContent">
+            <div class="bar bar-header bar-dark" ng-controller="GalleryCtrl" >
+                <button class="button button-icon icon ion-navicon" ng-click="toggleLeft()"></button>
+                <h1 class="title" >EVENT</h1>
+                <button class="button button-icon icon ion-android-camera" ng-click="clear('all')"></button>
+            </div>
+            <ion-pane>
+                <ion-content class="row responsive-lg" ng-controller="EventController" >
+                    <div class="row responsive-lg">
+                        <div class="list card col" ng-repeat="item in event">
+
+                                <div class="item">
+                                    <h1 style="text-align: center;" ng-model="input.firstName">{{item.eventname}}</h1>
+                                </div>
+                                
+                                <p>
+                                    {{item.eventdesp}}
+                                </p>
+
+                                <p >
+                                    <div class = "padding" ng-controller="ModelCtrl" >
+                                        <button class="button button-small button-outline button-positive" ng-click="modal.show()">
+                                            EVENT SPEAKERS
+                                        </button>
+                                     </div>
+                                </p>
+                                    <div class = "padding" ng-controller="GalleryCtrl" >
+                                    <button class="button button-small button-outline button-positive" ng-click="ename(item)">
+                                            GALLERY
+                                    </button>
+                                    </div>
+                        </div>
+                    </div>
+                </ion-content>
+            </ion-pane>
+            <div class="bar bar-footer bar">
+                <div class="title"><h6>Copyright &#169; 2015 Thuan Ethan &#124; Version 1.0.0</h6></div>
+            </div>
+
+
+
+
+</ion-nav-view>
+    </ion-pane>
+    <ion-side-menu side="left">
+        <header class="bar bar-header bar">
+            <h1 class="title">MENU</h1>
+        </header>
+        <ion-content class="has-header">
+            <ion-nav-view>
+            <div ng-controller="instantSearchCtrl">
+                <div class="bar item-input-inset">
+                    <label class="item-input-wrapper">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" class="search " ng-model="searchString" placeholder="Search" />
+                </label>
+                </div>
+                <div class="list" ng-controller="SpeakerController" >
+                    <a ng-repeat="it in items | searchFor:searchString" class="item" ng-click="devlop(it)">
+                         {{it.title}}
+                    </a>
+                </div>
+            </div><br>
+             <a href="#" class="item item-icon-right" ui-sref="Login">
+                    Logout
+                 <i class="icon ion-log-out"></i>
+             </a>
+            </ion-nav-view>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

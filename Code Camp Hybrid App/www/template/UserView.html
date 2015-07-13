@@ -1,0 +1,30 @@
+<div class="modal  responsive-lg" style="height: 350px; background-color:#FFFFFF;" >
+    <ion-header-bar>
+        <h1 class="title" style="text-align: center;">EVENT DETAILS</h1>
+    </ion-header-bar>
+
+    <ion-content ng-controller="SpeakerCtrl" >
+
+        <div class="list">
+
+            <div ng-repeat="dev in developers" >
+
+            <a class="item item-thumbnail-left" >
+                
+                    <img src="{{dev.image}}"  style="height: 100px; width: 100px;">
+                    <h2>{{dev.name}}</h2></a>
+                </div>
+
+
+                <div class="padding">
+                    <button class="button button-full button-positive" ng-click="modal.hide()">OK</button>
+                </div>
+
+        </div>
+
+        
+
+    </ion-content>
+</div>
+
+

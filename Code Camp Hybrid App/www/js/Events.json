@@ -1,0 +1,17 @@
+[
+  {
+    "eventname" 		 : "Windows 10 Game Jam",
+    "eventdesp"	 : "Join students from your area in an all-day game jam that kicks off with insight and instructions from Microsoft gaming experts.  Learn from professional devs about how the Windows 10 Universal App Platform unifies gaming across PCs, phones, and Xbox One.  Find out how your next game project can support multiplayer gaming across devices, tap into an amazing gaming community, and take advantage of the latest game engines and frameworks from Unity, Monogame, and Cocos.",
+    "evimage"        :"location.png"
+  },
+  {
+    "eventname" 		 : "Google I/O 2015",
+    "eventdesp"	 : "Google I/O is an annual developer conference with inspirational talks, hands-on learning, and a chance to hear more about Google's latest developer products.",
+    "evimage"        :"location.png"
+  },
+  {
+    "eventname" 		 : "WSO2 Con Asia 2015",
+    "eventdesp"	 : "WSO2Con Asia 2015 provides 3 full days of insightful sessions on ground-breaking enterprise technology, and how customers are taking advantage of WSO2′s innovative solutions to thrive in today’s connected world.The sessions will provide a comprehensive understanding of reference architectures and use cases.",
+    "evimage"        :"location.png"
+  },
+]
